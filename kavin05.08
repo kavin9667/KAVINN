@@ -1,0 +1,16 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static void main(String[] args){
+          
+        int n=10;
+        if(n<0){
+            System.out.println("negative");
+    }
+else{
+        System.out.println("positive");
+
+    }
+}
+}
