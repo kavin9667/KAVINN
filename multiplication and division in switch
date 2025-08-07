@@ -1,0 +1,20 @@
+package com.java;
+import java.util.Scanner;
+public class switch_case{
+    public static void main(String[]args){
+        Scanner scan=new Scanner(System.in);
+    System.out.println("enter first value");
+    int a=scan.nextInt();
+    System.out.println("enter second value");
+    int b=scan.nextInt();
+    System.out.println("+,_,*,/");
+    char c=scan.next().charAt(0);
+    switch(c){
+        case'*':
+        System.out.println(a*b);
+        break;
+        case'/':
+        System.out.println(a/b);
+    }
+    }
+}
