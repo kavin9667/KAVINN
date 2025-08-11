@@ -3,25 +3,19 @@ import java.util.Scanner;
 public class EllipseCalculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
-         Input semi-major axis (a) and semi-minor axis (b)
+Input semi-major axis (a) and semi-minor axis (b)
         System.out.print("Enter the semi-major axis (a): ");
         double a = sc.nextDouble();
-
-        System.out.print("Enter the semi-minor axis (b): ");
+ System.out.print("Enter the semi-minor axis (b): ");
         double b = sc.nextDouble();
-
-         Area of ellipse
+ Area of ellipse
         double area = Math.PI * a * b;
-
-        Perimeter (approximation using Ramanujan's formula)
+Perimeter (approximation using Ramanujan's formula)
         double h = Math.pow((a - b), 2) / Math.pow((a + b), 2);
         double perimeter = Math.PI * (a + b) * (1 + (3 * h) / (10 + Math.sqrt(4 - 3 * h)));
-
-         Display results
+  Display results
         System.out.printf("Area of the ellipse: %.2f%n", area);
         System.out.printf("Perimeter of the ellipse (approx): %.2f%n", perimeter);
-
-        sc.close();
+ sc.close();
     }
 }
