@@ -1,0 +1,18 @@
+package com.java;
+public class sample4{
+    int a=50;
+    String name="kavin;";
+    char initial='s';
+    double age=19;
+    double dob=28.12;
+    public static void area(sample4 t){
+        System.out.println(t.name);
+         System.out.println(t.initial);
+          System.out.println(t.age);
+           System.out.println(t.dob);
+    }
+    public static void main(String[]args){
+        sample4 s=new sample4();
+        area(s);
+    }
+    }
