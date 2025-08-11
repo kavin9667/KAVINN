@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class SectorCalculator {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+    Input radius
+        System.out.print("Enter the radius of the circle: ");
+        double radius = sc.nextDouble();
+
+        Input central angle (in degrees)
+        System.out.print("Enter the central angle (in degrees): ");
+        double angle = sc.nextDouble();
+
+        Area of sector
+        double area = (angle / 360.0) * Math.PI * radius * radius;
+
+         Arc length
+        double arcLength = (angle / 360.0) * (2 * Math.PI * radius);
+
+         Output
+        System.out.printf("Area of the sector: %.2f%n", area);
+        System.out.printf("Arc length of the sector: %.2f%n", arcLength);
+
+        sc.close();
+    }
+}
