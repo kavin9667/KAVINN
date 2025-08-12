@@ -1,0 +1,15 @@
+public class sample{
+     public static void main(String[]args){
+         int [] array1={4,2,5,3};
+         int [] array =new int [array1.length];
+         int c=0;
+         for(int i=array1.length-1;i>=0;i--){
+             array[c]=array1[i];
+             c++;
+                    
+                    
+                 }
+                 for(int k=0; k<array.length; k++){
+              System.out.print(array[k]+" ");
+                 }
+     }}
