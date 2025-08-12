@@ -1,0 +1,21 @@
+package com.java;
+public class sample4{
+    public static void main(String[]args){
+        int a[]={432,543,654,765};
+        int n=a.length;
+            int val[]=new int[n];
+        for (int i=0;i<a.length;i++){
+            int sum=0;
+            while(a[i]>0){
+                int dig=a[i]%10;
+                sum=sum+dig;
+                a[i]=a[i]/10;
+            }
+           
+            val[i]=sum;
+        }
+        for(int i=0;i<a.length;i++){
+            System.out.println(val[i]);
+        }
+    }
+        }
