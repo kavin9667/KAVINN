@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class SumOfTwoArrays {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Input size of arrays
+        System.out.print("Enter the size of the arrays: ");
+        int size = sc.nextInt();
+
+        int[] arr1 = new int[size];
+        int[] arr2 = new int[size];
+        int[] sum = new int[size];
+
+        // Input first array
+        System.out.println("Enter elements of first array:");
+        for (int i = 0; i < size; i++) {
+            arr1[i] = sc.nextInt();
+        }
+
+        // Input second array
+        System.out.println("Enter elements of second array:");
+        for (int i = 0; i < size; i++) {
+            arr2[i] = sc.nextInt();
+        }
+
+        // Calculate sum of arrays
+        for (int i = 0; i < size; i++) {
+            sum[i] = arr1[i] + arr2[i];
+        }
+
+        // Display result
+        System.out.println("Sum of the two arrays:");
+        for (int i = 0; i < size; i++) {
+            System.out.print(sum[i] + " ");
+        }
+
+        sc.close();
+    }
+}
