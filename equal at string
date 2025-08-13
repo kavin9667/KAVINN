@@ -1,0 +1,19 @@
+package package_2;
+public class sample45{
+    public static void main(String[]args){
+        String a="ajA";
+        String b="";
+        for(int i=0;i<a.length();i++){
+            char t=a.charAT(i);
+            b=t+b;
+        }
+        if(b.equalsIgnoreCase(a)){
+            System.out.print(b);
+        }
+        else{
+            System.out.print("it's not");
+            
+        }
+        }
+        }
+    
