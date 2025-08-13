@@ -1,0 +1,16 @@
+package com.string;
+public class CountCharacters{
+    public static int CountOccurences(String str.char ch){
+        int total=0;
+        for(char c:str.tocharArray()){
+            if(c==ch)
+            total++;
+        }
+        return total;
+    }
+    }
+    public static void main(String[]args){
+        System.out.println(Countoccurences("sql java css html",'a'));
+    }
+        
+    
